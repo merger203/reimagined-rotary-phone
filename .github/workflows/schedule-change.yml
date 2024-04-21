@@ -19,7 +19,7 @@ jobs:
         run: |
           cd .github/action
           npm ci
-          echo "OUTPUT=$(node ./github/action/schedule.js)" >> $GITHUB_OUTPUT
+          echo "OUTPUT=$(node ./schedule.js)" >> $GITHUB_OUTPUT
         id: output
 
       - uses: stefanzweifel/git-auto-commit-action@v5
