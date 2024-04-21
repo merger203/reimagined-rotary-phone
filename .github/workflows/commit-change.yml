@@ -1,7 +1,7 @@
 name: Commit Change
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   commit-change:
