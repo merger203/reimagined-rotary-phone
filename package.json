@@ -1,6 +1,6 @@
 {
   "name": "@merger203/reimagined-rotary-phone",
-  "version": "1.0.2",
+  "version": "2.0.3",
   "description": "",
   "main": "index.js",
   "author": "thestrangedev",
@@ -552,5 +552,5 @@
   "bugs": {
     "url": "https://github.com/merger203/reimagined-rotary-phone/issues"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.2.1"
 }
