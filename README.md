@@ -22,12 +22,12 @@ For Documentation, visit <https://caolan.github.io/@merger203/reimagined-rotary-
 
 ```javascript
 // for use with Node-style callbacks...
-var @merger203/reimagined-rotary-phone = require("@merger203/reimagined-rotary-phone");
+var merger203= require("@merger203/reimagined-rotary-phone");
 
 var obj = {dev: "/dev.json", test: "/test.json", prod: "/prod.json"};
 var configs = {};
 
-@merger203/reimagined-rotary-phone.forEachOf(obj, (value, key, callback) => {
+merger203.forEachOf(obj, (value, key, callback) => {
     fs.readFile(__dirname + value, "utf8", (err, data) => {
         if (err) return callback(err);
         try {
@@ -45,10 +45,10 @@ var configs = {};
 ```
 
 ```javascript
-var @merger203/reimagined-rotary-phone = require("@merger203/reimagined-rotary-phone");
+var merger203 = require("@merger203/reimagined-rotary-phone");
 
 // ...or ES2017 @merger203/reimagined-rotary-phone functions
-@merger203/reimagined-rotary-phone.mapLimit(urls, 5, @merger203/reimagined-rotary-phone function(url) {
+merger203.mapLimit(urls, 5, merger203 function(url) {
     const response = await fetch(url)
     return response.body
 }, (err, results) => {
